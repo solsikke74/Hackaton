@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Gravdal</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
+ <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
+ <link rel="stylesheet" href="images.css">
+</head>
+<body>
+ <!-- Inkluderer JavaScript-filen -->
+ <script src="kode.js"></script>
+ <style>
+  #myText {
+      display: none;
+  }
+</style>
+
+<div class="header">
+    <h1>Images</h1>
+</div>
+
+<p>Galleri</p>
+
+<div class="gallery">
+      <a target="_blank" href="animals/bever.png">
+        <img src="animals/bever.png" alt="Bilde av en bever" width="300" height="200">
+      </a>
+      <div class="desc">Bever</div>
+      </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="animals/enhjorning.png">
+        <img src="animals/enhjorning.png" alt="Bilde av en enhjørning" width="300" height="200">
+      </a>
+      <div class="desc">Enhjørning</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="animals/gullfisk.png">
+        <img src="animals/gullfisk.png" alt="Bilde av en gullfisk" width="300" height="200">
+      </a>
+      <div class="desc">Gullfisk</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="animals/kanin.png">
+          <img src="animals/kanin.png" alt="Bilde av en gullfisk" width="300" height="200">
+        </a>
+        <div class="desc">Kanin</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="animals/katt.png">
+          <img src="animals/katt.png" alt="Bilde av en gullfisk" width="300" height="200">
+        </a>
+      <div class="desc">Katt</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="animals/hund.png">
+        <img src="animals/hund.png" alt="hund" width="300" height="200">
+        </a>
+      <div class="desc">Hund</div>
+    </div>
+</div>
+
+<p style="clear: both;">Hero image</p>
+<div class=""clearfix></div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Jeg heter Linda</h1>
+    <h3>Jeg liker å game</h3>
+    <button onclick="toggleText()"  button class="button button1">Vil du bli kjent med meg?</button>
+    <p id="myText">Koden er: 2Å1</p>
+  </div>
+</div>
+
+<div class=""clearfix></div>
+<br>
+
+<div class="footer">
+  <p><a href="index.html">Tar deg tilbake til startsiden</a></p>
+</div>
+
+</body>
+</html>

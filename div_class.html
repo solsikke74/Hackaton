@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div Class</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
+ <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
+ <link rel="stylesheet" href="css/div_class.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Notater html, css og javascript</h1>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li><a href="responsive.html" class="menu-li">Responsive</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+        <li><a href="inline.html" class="menu-li">Inline</a></li>
+        <li><a href="div_class.html" class="menu-li">Div Class </a></li>
+        <li><a href="block.html" class="menu-li">Block</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-s-9">
+            <h1>Div Class</h1>
+            <h3>Div</h3>
+            <p>
+                Div er en kontainer for andre html-elementer. <br>
+                Div holder like mye plass som en blokk<br>
+                Brukes for å gruppere innhold som hører sammen på en webside. <br>
+                Sentrere en div: margin:auto; i css. <br>
+                Kommer ikke til å lære float pga responsive design og flexbox. <br>
+                <b>Flexbox</b> brukes for å sette diver ved siden av hverandre. Problemet er at de ikke flyttes under hverandre hvis skjermstørrelsen endres. <br>
+                
+
+            </p>
+    </div>
+
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>Web</h2>
+        <p><a href="https://www.w3schools.com/">w3school</a></p>
+        <h2>Design</h2>
+        <p><a href="https://pixelied.com/colors/color-palette-generator">Farger</a> <br>
+          <a href=https://www.shecodes.io/palettes>Farger</a> </p>
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+</div>
+
+<div class="footer">
+  <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
+</div>
+
+</body>
+</html>

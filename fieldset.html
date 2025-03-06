@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Gravdal</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
+ <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Notater html, css og javascript</h1>
+    
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+          <ul>
+            <li><a href="responsive.html" class="menu-li">Responsive style</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+            <li><a href="inline.html" class="menu-li">Inline</a></li>
+            <li><a href="div_class.html" class="menu-li">Div Class </a></li>
+            <li><a href="block.html" class="menu-li">Block</a></li>
+            <li><a href="fieldset.html" class="menu-li">Skjema</a></li>
+          </ul>
+        </div>
+    
+        <div class="col-6 col-s-9">
+          <h1>Skjema
+          </h1>
+          <picture>
+            <source srcset="img/Skjerma2.png" media="(max-width: 800px)">
+            <source srcset="img/Skjema.png".jpg">
+            <img src="img/Skjerma2.png" alt="Flowers" style="max-width:60%;">
+          </picture>
+
+          <br>
+
+        <form action="/action_page.php">
+            <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">Fornavn:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Etternavn:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Epost:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Fødselsdato:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+            </fieldset>
+            </form>
+        </div>
+    
+        <div class="col-3 col-s-12">
+          <div class="aside">
+            <h2>Web</h2>
+            <p><a href="https://www.w3schools.com/">w3school</a></p>
+            <h2>Design</h2>
+            <p><a href="https://pixelied.com/colors/color-palette-generator">Farger</a> <br>
+              <a href=https://www.shecodes.io/palettes>Farger</a> </p>
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+      <p><a href="index.html" class="footer">Tar deg tilbake til startsiden</a></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Gravdal</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="bilder/Brunsj.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gjør designet responsivt etter størrelsen-->
+<!-- width=device-width - gjør at designet tilpasses skjermbredden -->
+ <!-- initial-scale=1.0 - setter utgangspunkt for zooming når siden først lastes i nettleseren -->
+ <link rel="stylesheet" href="css/fargerik_meny_hoyre.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Notater html, css og javascript</h1>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li><a href="responsive.html" class="menu-li">Responsiv - frisor</a></li> <!-- bruker en class for å gjøre hele blokken klikkbar-->
+        <li><a href="inline.html" class="menu-li">Inline</a></li>
+        <li><a href="div_class.html" class="menu-li">Div Class frisor</a></li>
+        <li><a href="block.html" class="menu-li">Block</a></li>
+        <li><a href="fieldset.html" class="menu-li">Skjema</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-s-9">
+        <h1>Responsiv</h1>
+        <img src="img/responsivt.png" alt="Koden er: ÆU3" style="width:60%";>
+        <h3>The viewport</h3>
+        <p>Brukerens synlige område på en webside<br>
+        Varierer etter skjermstørrelsen. 
+        </p>
+      <h3>Kode i <code>meta</code></h3>
+        <p>
+        <code>meta name="viewport" content="width=device-width, initial-scale=1.0"</code><br>
+        Designet blir responsivt etter størrelsen <br>
+        <code>width=device-width </code> - Designet tilpasses skjermbredden <br>
+        <code>initial-scale=1.0 </code> - setter utgangspunkt for zooming når siden først lastes i nettleseren <br>
+        </p>
+        
+        <h3>Huskeregler størrelsesforhold</h3>
+        <p>
+        Innhold skal ikke være større enn bredden. Pass på å justere elementer til bredde, så du slipper horisontal skrolling <br>
+        Innhold skal kunne se bra ut på flere ulike bredder <br>
+        Bruk % og ikke pixler for best resultat <br>
+        </p>
+        
+        <h3>Grid view</h3>
+        <p>
+        Vi deler inn siden i ulike kolonner <br>
+        Det gjør det enklere å plassere ulike elementer på websiden. <br>
+        Et responsivt design har 12 kolonner, som har en total bredde på 100%, og som krymper og forstørres når du forminsker eller forstørrer vinduet <br>
+        </p>
+        
+        <h3>Oppbygning av grid-view</h3>
+        <p>
+          <b>Border box</b><br>
+        Bruk box-sizing og sett verdien til border-box. Dette sørger for at padding og border er inkludert i total bredde og høyde til elementet <br>
+        Dette er koden: <code>* {
+            box-sizing: border-box;
+        } </code> 
+        <br>
+        Du legger inn denne koden i css-filen, og den er global og gjelder for alle nettsider som linkes til dette dokumentet. <br>
+        <br>
+        </p>
+        <h3>Oppsett med 12 kolonner</h3>
+        <p>
+        Vi lager 12 ulike klasser. Bruker div og kaller klassen når vi trenger den. <br>
+        <code>
+        .col-1 {width: 8.33%;} <br>
+        .col-2 {width: 16.66%;} <br>
+        .col-3 {width: 25%;} <br>
+        .col-4 {width: 33.33%;} <br>
+        .col-5 {width: 41.66%;}<br>
+        .col-6 {width: 50%;} <br>
+        .col-7 {width: 58.33%;} <br>
+        .col-8 {width: 66.66%;} <br>
+        .col-9 {width: 75%;} <br>
+        .col-10 {width: 83.33%;} <br>
+        .col-11 {width: 91.66%;} <br>
+        .col-12 {width: 100%;} <br>
+        </code> <br>
+        Slik kaller vi koden i html. <code>"<"div class="col-9" ">"</code> <br>
+        </p>
+        <h3>Float og kolonner</h3>
+        <p>
+          Hver kolonne skal pakkes inn i en <code>div</code>og flyte til venstre. 
+        </p>
+        <h3>Media query</h3>
+        <p>
+            Media query blir brukt for å tilpasse innholdet etter skjermstørrelsen. <br>
+            Vi bruker ulike "break points", der enkelte deler av designet oppfører seg ulikt, basert på størrelsen <br>
+            Dette er koden vi legger inn i css. <br>
+            <code>@media only screen and (max-width: 768px) {<br>
+                /* For mobile phones: */<br>
+                [class*="col-"] { <br>
+                width: 100%; <br>
+                }</code> <br>
+        Gå inn på <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints">denne</a> siden for å se eksmpel ifbm break points <br>
+            </p>
+        <h3>Mobildesign først</h3>
+        <p>
+        Grunnen er at sidene lastes raskere på små enheter. <br>
+        I stedet for å designe vinduet til å endre seg når det er lite, bør vi endre det når det blir større. <br>
+        w3school har 5 "break points" <br>
+        Her er forslag til kode og hvordan det blir brukt. 
+        <code>
+        
+            /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {...} <br>
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {...} <br>
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {...} <br>
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {...} <br>
+        
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {...} <br>
+        </code>
+        </p>
+        flex dirextion - sjekk
+      </p>
+    </div>
+
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <b>Web</b>
+        <p><a href="https://www.w3schools.com/">w3school</a></p>
+        <b>Design</b>
+        <p><a href="https://pixelied.com/colors/color-palette-generator">Farger</a> <br>
+          <a href=https://www.shecodes.io/palettes>Farger</a> </p>
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+</div>
+
+<div class="footer">
+  <p><a href="index.html" class="footer">Startside</a></p>
+</div>
+
+</body>
+</html>
