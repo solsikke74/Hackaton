@@ -156,6 +156,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  width: 50%;
 }
 
 .hero-text {
