@@ -1,0 +1,122 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  [class*="col-"] {
+    float: right;
+    padding: 15px;
+  }
+  
+  
+  html {
+    font-family: Verdana, Arial, sans-serif;
+    background: #fae3d9;
+    color:#424874;
+  }
+  
+  .header {
+    background-color: #ffb6b9;
+    border-radius: 60px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  .header h1{
+      font-size: 20 px;
+      color: #424874;
+      margin-bottom: 20px;
+      padding-left: 30px;
+    }
+  
+  a {
+    color: #424874;
+  }
+  
+  .menu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-li { /* menyen*/
+    display: block; /*gjør hele <a>-tagen til et blokkelement */
+    padding: 8px;
+    font-size: 14;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: #bbded6;
+    color: #424874;
+    border-radius: 60px;
+    padding-left: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu-li:hover { /* fargen som vises når du holder musen over*/
+    background-color: #61c0bf;
+  }
+  
+  .aside {
+    background-color: #bbded6;
+    padding: 15px;
+    color: #424874;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .footer {
+    display: block; /*gjør hele <a>-tagen til et blokkelement */
+    background-color: #61c0bf;
+    color: #424874;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 60px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  

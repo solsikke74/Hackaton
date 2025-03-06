@@ -19,12 +19,11 @@
   
   html {
     font-family: Verdana, Arial, sans-serif;
-    background-color:  #e0ebeb;;
   }
   
   .header {
-    background-color: #a7bcb9;;
-    border-radius: 15px 15px 0px 0px;
+    background-color: #a6b1e1;
+    border-radius: 15px 60px;
     padding: 15px;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -53,7 +52,7 @@
     font-size: 14;
     text-decoration: none;
     margin-bottom: 20px;
-    background-color: #a7bcb9;;
+    background-color: #a6b1e1;
     color: #f4eeff;
     border-radius: 15px 60px;
     padding-left: 50px;
@@ -65,7 +64,7 @@
   }
   
   .aside {
-    background-color: #a7bcb9;;
+    background-color: #a6b1e1;
     padding: 15px;
     color: #f4eeff;
     border-radius: 15px 60px;
@@ -81,7 +80,7 @@
     text-align: center;
     font-size: 12px;
     padding: 15px;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 60px;
   }
   
   /* For mobile phones: */
@@ -120,66 +119,3 @@
     .col-12 {width: 100%;}
   }
   
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.clearfix {
-  margin-top: 20px;
-}
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/jente.png");
-  height: 500px; /* Juster høyden etter behov */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #a7bcb9;;
-  color: white;
-}
